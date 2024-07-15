@@ -1,0 +1,197 @@
+<html><head><base href="https://zen-tokenizer.web"><title>ZEN Business Tokenizer</title><style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+  }
+  .header {
+    background: linear-gradient(90deg, #7c4dff, #448aff);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  .content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  .section {
+    background-color: rgba(245, 240, 255, 0.8);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a148c;
+    border-bottom: 2px solid #7c4dff;
+    padding-bottom: 10px;
+  }
+  .token-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .token-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7c4dff, #448aff);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .arrow {
+    font-size: 28px;
+    color: #7c4dff;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  .animated {
+    animation: pulse 2s infinite, float 3s ease-in-out infinite;
+  }
+  .description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+  .token-info {
+    background-color: rgba(124, 77, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .token-info p {
+    margin: 5px 0;
+  }
+  .claim-button {
+    background: linear-gradient(90deg, #7c4dff, #448aff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+  }
+  .claim-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
+  }
+</style></head><body>
+  <div class="container">
+    <div class="header">ZEN Business Tokenizer</div>
+    <div class="content">
+      <div class="section">
+        <div class="section-title">Consumer Onboarding</div>
+        <div class="token-flow">
+          <div class="token-icon animated">$</div>
+          <div class="arrow">→</div>
+          <div class="token-icon animated">ZEN</div>
+        </div>
+        <p class="description">Convert fiat currency to ZEN tokens with only 2% fee. Seamless FIAT ($) onramp for easy token acquisition.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Tokenized Consumers</div>
+        <div class="token-flow">
+          <div class="token-icon animated">👤</div>
+          <div class="arrow">→</div>
+          <div class="token-icon animated">⭐</div>
+        </div>
+        <p class="description">Subscribers gain loyalty status and exclusive benefits. Become part of a global tokenized community.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Pricing Model</div>
+        <div class="token-flow">
+          <div class="token-icon animated">500</div>
+          <div class="arrow">→</div>
+          <div class="token-icon animated">625</div>
+        </div>
+        <p class="description">Token to Money conversion with increased purchasing power. 500 tokens equal 625 in monetary value.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Business Integration</div>
+        <div class="token-flow">
+          <div class="token-icon animated">ZEN</div>
+          <div class="arrow">→</div>
+          <div class="token-icon animated">₿</div>
+        </div>
+        <p class="description">Seamless integration with your existing business wallet. Compatible with major cryptocurrencies.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Token Circulation</div>
+        <div class="token-flow">
+          <div class="token-icon animated">🔥</div>
+          <div class="arrow">↔</div>
+          <div class="token-icon animated">💼</div>
+        </div>
+        <p class="description">Burn wallet for stabilization and enterprise wallet management. Ensures token value and market stability.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Exit Strategy</div>
+        <div class="token-flow">
+          <div class="token-icon animated">ZEN</div>
+          <div class="arrow">→</div>
+          <div class="token-icon animated">30%</div>
+        </div>
+        <p class="description">Subscribers can exit with a 30% sell tax, funds go to business in BNB, ETH or any other incorporated token.</p>
+      </div>
+      <div class="section">
+        <div class="section-title">Token Information</div>
+        <div class="token-info">
+          <p><strong>Total Supply:</strong> 1,000,000 YOUR2E2</p>
+          <p><strong>Contract:</strong> 0xeadba...7f5a2e</p>
+          <p><strong>Decimals:</strong> 18</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Claim Product</div>
+        <p class="description">Use your tokens to claim exclusive products and services.</p>
+        <button class="claim-button animated">Claim Now</button>
+      </div>
+    </div>
+  </div>
+</body></html>
